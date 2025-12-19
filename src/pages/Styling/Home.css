@@ -1,0 +1,88 @@
+.home-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DARK OVERLAY */
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+/* CONTENT */
+.home-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.home-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* FOOTBALL HIT EFFECT */
+.football-hit {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  z-index: 2;
+  animation: footballKick 2s ease-out infinite;
+}
+
+/* ANIMATION */
+@keyframes footballKick {
+  0% {
+    transform: translate(-50%, 0) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    transform: translate(-50%, -280px) scale(1.2) rotate(360deg);
+  }
+  100% {
+    transform: translate(-50%, -420px) scale(0.6);
+    opacity: 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .home-content h1 {
+    font-size: 42px;
+  }
+
+  .football-hit {
+    font-size: 46px;
+  }
+}

@@ -1,0 +1,210 @@
+.football-footer {
+  background-color: #000;
+  color: #ffffff;
+  padding-top: 80px;
+  font-family: inherit;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 6%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #00ff88;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+/* LINKS */
+.footer-links h4 {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00ff88;
+  padding-left: 6px;
+}
+
+/* NEWSLETTER */
+.footer-newsletter h4 {
+  margin-bottom: 14px;
+}
+
+.footer-newsletter p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 16px;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.newsletter-box button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #00ff88;
+  font-weight: 700;
+  transition: background 0.3s ease;
+}
+
+.newsletter-box button:hover {
+  background: #00e07a;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  margin-top: 60px;
+  padding: 20px 6%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* =============================
+   MOBILE FOOTER ONLY
+============================= */
+@media (max-width: 900px) {
+
+  .football-footer {
+    padding-top: 50px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* stack sections vertically */
+    gap: 40px;
+    padding: 0 4%;
+  }
+
+  /* Brand */
+  .footer-brand h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center; /* center social icons */
+    gap: 12px;
+  }
+
+  /* Links */
+  .footer-links h4 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Newsletter */
+  .footer-newsletter h4 {
+    text-align: center;
+  }
+
+  .footer-newsletter p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .newsletter-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-box input,
+  .newsletter-box button {
+    width: 100%;
+  }
+
+  /* Bottom */
+  .footer-bottom {
+    font-size: 12px;
+    text-align: center;
+    padding: 15px 4%;
+    margin-top: 40px;
+  }
+}
+
